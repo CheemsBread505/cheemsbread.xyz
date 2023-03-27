@@ -1,22 +1,19 @@
 body{
     background-color: rgb(27, 27, 27);
     color: whitesmoke;
+    font-family: 'Space Mono', monospace;
 }
 
 h2{
     text-align: center;
     font-size: xx-large;
-}
-
-img{
-    float: right;
-    padding-right: 27%;
-    width: 160px;
-    height: auto;
+    font-family: 'Space Mono', monospace;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
 .links{
-    padding-left: 29%;
+    padding-left: 24%;
 }
 
 a:link {
@@ -36,3 +33,22 @@ a:link {
     background-color: transparent;
     text-decoration: underline;
 }
+
+.cheems-image {
+    width: 200px; 
+    height: 200px; 
+    float: right;
+    padding-right: 20%;
+    width: 160px;
+    height: auto;
+  }
+  
+  .cheems-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; 
+  }
+  
+  .cheems-image:hover img {
+    transform: scale(0.9);
+  }
