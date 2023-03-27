@@ -1,7 +1,18 @@
-<link rel="stylesheet" href="styles.css">
+<style>
+    body{
+        background-color: rgb(27, 27, 27);
+        color: whitesmoke;
+        font-family: 'Space Mono', monospace;
+    }
+</style>
 
 <div id="chat-box" style="height: 200px; overflow-y: scroll;">
-  <?php echo file_get_contents('chat.log'); ?>
+  <?php
+    $messages = array_reverse(file('chat.log'));
+    foreach ($messages as $message) {
+      echo $message;
+    }
+  ?>
 </div>
 
 <?php

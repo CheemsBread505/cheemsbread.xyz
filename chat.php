@@ -13,6 +13,12 @@
 <?php
 session_start();
 
+$ip_address = $_SERVER['REMOTE_ADDR'];
+$log_file = 'ip_log.txt';
+$log_message = date('Y-m-d H:i:s') . ' - ' . $ip_address . "\n";
+file_put_contents($log_file, $log_message, FILE_APPEND);
+
+
 // Check if user has submitted a message
 if (isset($_POST['message'])) {
   $message = htmlspecialchars($_POST['message']);
@@ -41,7 +47,8 @@ if (isset($_SESSION['username'])) {
   $username = $_SESSION['username'];
 ?>
   <h1>Simple Chat Room</h1>
-  <iframe src="chat-messages.php" style="height: 200px; overflow-y: scroll;"></iframe>
+  <p style="color: red; font-size: small;">do not share personal information about yourself or other people in this chatroom</p>
+  <iframe src="chat-messages.php" style="height: 600px; width: 400px; overflow-y: scroll;"></iframe>
   <form method="post">
     <input type="text" name="message" placeholder="Type your message here">
     <button type="submit">Send</button>
