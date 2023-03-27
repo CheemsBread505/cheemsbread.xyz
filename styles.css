@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+}
+
+h2{
+    text-align: center;
+    font-size: xx-large;
+}
+
+img{
+    float: right;
+    padding-right: 27%;
+    width: 160px;
+    height: auto;
+    transition: transform .7s ease-in-out;
+}
+
+img:hover {
+    transform: rotate(25deg);
+}
+
+.links{
+    padding-left: 29%;
+}
+
+a:link {
+    color: gold;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+  a:visited {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+  a:hover {
+    color: rgb(250, 216, 23);
+    background-color: transparent;
+    text-decoration: underline;
+}
