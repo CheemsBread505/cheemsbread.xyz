@@ -13,11 +13,6 @@ img{
     padding-right: 27%;
     width: 160px;
     height: auto;
-    transition: transform .7s ease-in-out;
-}
-
-img:hover {
-    transform: rotate(25deg);
 }
 
 .links{
