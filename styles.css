@@ -12,6 +12,23 @@ h2{
     border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
+button{
+  width: 60px;
+  height: 40px;
+  font-size: 14px;
+  background-color: rgb(32, 32, 32);
+  color: azure;
+}
+
+.center{
+  margin: 0;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .links{
     padding-left: 24%;
 }
