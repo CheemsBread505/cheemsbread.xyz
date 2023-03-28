@@ -6,7 +6,7 @@
     }
 </style>
 
-<div id="chat-box" style="height: 200px; overflow-y: scroll;">
+<div id="chat-box" style="height: 600px; overflow-y: scroll;">
   <?php
     $messages = array_reverse(file('chat.log'));
     foreach ($messages as $message) {

@@ -42,7 +42,7 @@ if (isset($_SESSION['username'])) {
 ?>
   <h1>Simple Chat Room</h1>
   <p style="color: red; font-size: small;">do not share personal information about yourself or other people in this chatroom</p>
-  <iframe src="chat-messages.php" style="height: 600px; width: 400px; overflow-y: scroll;"></iframe>
+  <iframe src="chat-messages.php" style="height: 500px; width: 400px; overflow-y: scroll; resize: both;"></iframe>
   <form method="post">
     <input type="text" name="message" placeholder="Type your message here">
     <button type="submit">Send</button>
