@@ -13,12 +13,6 @@
 <?php
 session_start();
 
-$ip_address = $_SERVER['REMOTE_ADDR'];
-$log_file = '/var/www/log/ip_log.txt';
-$log_message = date('Y-m-d H:i:s') . ' - ' . $ip_address . "\n";
-file_put_contents($log_file, $log_message, FILE_APPEND);
-
-
 // Check if user has submitted a message
 if (isset($_POST['message'])) {
   $message = htmlspecialchars($_POST['message']);
