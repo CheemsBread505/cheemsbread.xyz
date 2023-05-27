@@ -1,0 +1,7 @@
+User-agent: *
+DIsallow: /files/*
+Disallow: /chat.log
+
+User-agent: Googlebot
+DIsallow: /files/*
+Disallow: /chat.log
