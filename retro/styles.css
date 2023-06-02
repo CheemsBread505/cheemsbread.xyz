@@ -1,0 +1,101 @@
+@font-face {
+  font-family: SpaceMono;
+  src: url(files/spacemono.ttf);
+}
+
+body{
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+    font-family: 'Space Mono', monospace;
+}
+
+h2{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Space Mono', monospace;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+
+button{
+  width: 60px;
+  height: 40px;
+  font-size: 14px;
+  background-color: rgb(32, 32, 32);
+  color: azure;
+}
+
+.center{
+  margin: 0;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.links{
+    padding-left: 24%;
+}
+
+.projects{
+  padding-left: 24%;
+}
+
+a:link {
+    color: gold;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+  a:visited {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+  a:hover {
+    color: rgb(250, 216, 23);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.cheems-image {
+    width: 200px; 
+    height: 200px; 
+    float: right;
+    padding-right: 20%;
+    width: 160px;
+    height: auto;
+  }
+  
+  .cheems-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; 
+  }
+  
+  .cheems-image:hover img {
+    transform: scale(0.9);
+  }
+
+  .LSD {
+    width: 200px; 
+    height: 200px; 
+    float: right;
+    padding-right: 20%;
+    width: 160px;
+    height: auto;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cccac2 !important;
+}
+
+.hidden-text {
+    display: none;
+    color: #cccac2 !important; 
+}
