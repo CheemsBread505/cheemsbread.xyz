@@ -99,3 +99,25 @@ a:link {
     display: none;
     color: #cccac2 !important; 
 }
+
+/* Styles for the yellow banner */
+.yellow-banner {
+  background-color: goldenrod;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Styles for the close button */
+.close-btn {
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+}
+
+/* Styles for the banner content */
+#banner p {
+  margin: 0;
+}
